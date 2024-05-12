@@ -45,6 +45,7 @@ body {
 .inputgroup {
     display: flex;
     align-items: center;
+    text-align: left;
     gap: 1.5rem;
 }
 

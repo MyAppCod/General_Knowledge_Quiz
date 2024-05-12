@@ -265,6 +265,8 @@ nextButton.addEventListener("click", () => {
     if (answerIndex !== -1) {
         if (randomQuestions[currentQuestionIndex].answers[answerIndex].correct) {
             score++;
+        } else {
+            alert(`The answer is: ${randomQuestions[currentQuestionIndex].answers.find(answer => answer.correct).text}`);
         }
         currentQuestionIndex++;
         if (randomQuestions.length > currentQuestionIndex) {
